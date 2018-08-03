@@ -1,3 +1,5 @@
+import lti.org.Executive;
+
 public class TestEmployee {
 
 	public static void main(String[] args) {
@@ -7,7 +9,7 @@ public class TestEmployee {
 
 		Executive exe = new Executive("rose", 7000, 3000);
 
-		showSalary(exe);
+		//showSalary(exe);
 
 	}
 

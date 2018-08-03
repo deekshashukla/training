@@ -1,4 +1,4 @@
-import TestEmployee;
+
 
 public class Employee extends TestEmployee {
 	private int empNo;

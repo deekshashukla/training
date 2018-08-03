@@ -1,5 +1,4 @@
-import Bank;
-import Transaction;
+
 
 public abstract class Account implements Bank {
 	private int acntno;
