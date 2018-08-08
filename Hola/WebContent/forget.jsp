@@ -1,17 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html >
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Forgot Password</title>
 </head>
-<body>
-<h1>Forgot Password</h1>
-<form action="forgot-process.jsp" method="post"><br><br>
-Enter Email ID:<input type="text" name="email" /><br><br>
-Enter Movie Name:<input type="text" name="movie" /><br><br>
-<input type="submit" />
+<body bgcolor=wheat text=maroon>
+<form action="User.hola">
+<h2>Enter these details to access your account again</h2><hr>
+<h4>Email </h4>
+<input type="text" name=email placeholder="email id"></input>
+<h4>Enter your favourite movie?</h4>
+<input type="password" name=movie placeholder="Enter your answer"></input><br><br>
+
+
+<input type=submit value=Submit>
 </form>
 </body>
 </html>

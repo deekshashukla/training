@@ -1,8 +1,10 @@
 package lti.hola.bean;
 
-public class forgetBean {
+public class ForgetBean {
 	private String email;
 	private String movie;
+	
+	
 	public String getEmail() {
 		return email;
 	}

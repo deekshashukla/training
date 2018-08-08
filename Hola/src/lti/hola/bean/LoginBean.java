@@ -1,6 +1,6 @@
 package lti.hola.bean;
 
-public class loginBean {
+public class LoginBean {
 
 	private String email;
 	private String password;

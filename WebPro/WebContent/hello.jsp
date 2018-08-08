@@ -7,13 +7,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body bgcolor=wheat text=spinach>
-	<h1>Hello beautiful world!</h1>
-	<hr>
-	<h2>Welcome to java server pages</h2>
-	<h3>Visit time:<%=new Date()%></h3>
-	<%!int counter = 1001;%>
-	<h3>Visitor no:<%=counter++%></h3>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<body bgcolor=lightskyblue text=blue>
 
+<fmt:setLocale value="${param.loc}"/>
+<fmt:setBundle basename="labels"/>
+
+<h1><fmt:message key="greeting"/>!</h1>
+<hr>
+<h2><fmt:message key="message"/></h2>
+<h3><fmt:message key="time"/>:<%= new Date() %></h3>
+<%! int counter= 1001; %>
+<h3><fmt:message key="count"/>: <%= counter++ %></h3>
+<hr>
+<a href="hello.jsp?loc=en">English</a>
+<a href="hello.jsp?loc=hi">Hindi</a>
+<a href="hello.jsp?loc=fr">French</a>
+
+	
+	
+	<%-- <h1>Hello Beautiful World!</h1>
+	<hr>
+	<h2>Welcome to Java Server Pages</h2>
+	<h3>Visit Time:<%=new Date()%></h3>
+	<%!int counter = 1001;%>
+	<h3>Visitor No:<%=counter++%></h3>
+ --%>
 </body>
 </html>
